@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <title>Example 01</title>
+    <style type="text/css">
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        #info {
+            background-color:white;
+            color:navy;
+            position: absolute;
+            left:0px;
+            right:0px;
+            top:0px;
+            bottom:30%;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        See console below. It showes messages added by console object.
+    </div>
+	<div class="console"></div>
+</body>
+<link href="../build/jcm.css" rel="stylesheet" type="text/css"/>
+<script src='../build/jcm.min.js' console='.console'></script>
+<script>
+    console.trace('trace message demo.');
+    console.debug('debug message demo.');
+    console.log('log message demo.');
+    console.info('info message demo.');
+    console.warn('warn message demo.');
+    console.error('error message demo.');
+</script>
+</html>

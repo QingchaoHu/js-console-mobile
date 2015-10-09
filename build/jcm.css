@@ -1,0 +1,47 @@
+.console {
+    background-color:black;
+    color:white;
+    position: absolute;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    height:30%;
+    overflow: auto;
+    z-index:100;
+}
+
+.console div {
+    padding:2px;
+}
+
+/*['trace', 'debug', 'log', 'info', 'warn', 'error']*/
+
+.console div.trace span {
+    background-color: gray;
+    color:green;
+}
+
+.console div.debug span {
+    background-color: blue;
+    color:white;
+}
+
+.console div.log span {
+    background-color: gray;
+    color:white;
+}
+
+.console div.info span {
+    background-color: green;
+    color:white;
+}
+
+.console div.warn span {
+    background-color: yellow;
+    color:navy;
+}
+
+.console div.error span {
+    background-color: red;
+    color:white;
+}
